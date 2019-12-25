@@ -1,0 +1,26 @@
+<view id="bgView">
+  <image id='bonusImg' src='../../images/nobonus.png'></image>
+  <view id='bonusTxt'>很遗憾这次没有中奖哦</view>
+  <view id='goodsBgView'>
+         <view class="goodsImgView">
+          <image class="goodsImg" src="{{goodsInfo.coverImg}}"></image>
+         </view>
+         <view class="goodsTxtView">
+          <view class="lineView0">
+            <image src="../../images/spIcon.png" class="spIcon" mode="aspectFit"></image>
+            <view class="spNameTxt">{{goodsInfo.sponsor}}</view>
+          </view>
+      
+            <view class="priceTxt" wx:if="{{goodsInfo.price[0]}}">一等奖: {{goodsInfo.price[0].priceName}} </view>
+            <view class="priceTxt" wx:if="{{goodsInfo.price[1]}}">二等奖: {{goodsInfo.price[1].priceName}} </view>
+            <view class="priceTxt" wx:if="{{goodsInfo.price[2]}}">三等奖: {{goodsInfo.price[2]}} </view>
+         
+          <view class="lotteryTimeTxt" style='pointer-events: none'>{{goodsInfo.lotteryTime}}</view>
+         </view>
+      
+    <view class="ensureBtn" bindtap="clickEnsureBtn">逛一逛</view>
+    <view class="blank"></view>
+  </view>
+
+  <view class="blank2"></view>
+</view>

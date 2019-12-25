@@ -1,0 +1,59 @@
+
+<view wx:if="{{isHide}}">
+    
+  <view class='header'>
+    <image src='../../images/about.png'></image>
+  </view>
+ 
+  <view class='content'>
+    <view>申请获取以下权限</view>
+    <text>手机号码:仅用于发奖</text>
+  </view>
+  <button type='primary' class='bottom' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">同意</button>
+  <!--
+  <button class='bottom' type='primary' open-type="getPhoneNumber" lang="zh_CN" bindgetphonenumber="getPhoneNumber">
+    授权手机号码
+  </button>
+  -->
+</view>
+
+<view id="bgView" wx:else>
+  <view id="titleView">
+    <text id="titleTxt">{{titleTxt}}</text>
+    <image id="ruleImg" src="../../images/rule.png" bindtap="clickRule"></image>
+  </view>
+  <image id="detailImg0" src="../../images/cashDetail0.png"></image>
+  
+  
+  <view id="detailTxt">现金红包可提现</view>
+  <image id="detailImg1" src="../../images/cashDetail1.png"></image>
+  
+  
+  <view id="boxView">
+    <image src="../../images/box.png" id="boxImg"></image>
+    <view id="boxTitleView">抢到就是赚到</view>
+    <block wx:for="{{boxAniTxtList}}">
+      <view class="boxAniTxtView" style="left:{{index*114+99}}rpx;">{{boxAniTxtList[index]}}</view>
+    </block>
+    <!--
+    <view id="adTxt">看完整视频获得抽奖机会</view>
+    -->
+    <image class="boxBtn" src="{{boxBtnSrc}}" mode="aspectFit" bindtap="clickBoxBtn"></image>
+    <view class="boxBtnTxt" style='pointer-events: none' wx:if="{{status==1}}">{{boxBtnTxt}}</view>
+    <view class="boxBtnTxt" style='pointer-events: none' wx:elif="{{status==0}}">即将开始</view>
+    <view class="boxBtnTxt" style='pointer-events: none' wx:else>已结束</view>
+    <!--
+    <view class="boxBtnTxt" style='pointer-events: none' wx:if="{{isLookedAd}}">{{boxBtnTxt}}</view>
+     <view class="boxBtnTxt" style='pointer-events: none' wx:else>看完视频抽红包</view>
+     -->
+  </view>
+  <view id="adView">
+    <ad unit-id="adunit-98c1996f41636e18" ad-type="video" ad-theme="white"></ad>
+    <!--
+    <ad unit-id="adunit-f4613f0684c12171"></ad>
+    -->
+  </view>
+  <view id="joinNum"></view>
+  
+
+</view>

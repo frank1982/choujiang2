@@ -1,0 +1,98 @@
+<block wx:if="{{isResultShow}}">
+  <view class="ticketBg"></view>
+  <view id="resultBg"></view>
+ 
+  <view id="resultC">
+    <image id="resultImg1" src="{{resultInfo.resultImg}}" mode="aspectFit"></image>
+  </view>
+  <view id="resultTxt">{{resultInfo.resultTxt}}</view>
+  <view id="resultTxt1">{{resultInfo.resultTxt1}}</view>
+  <view id="resultBtn" bindtap="clickResultBtn">{{resultInfo.resultTxt2}}</view>
+  <image id="closeBtn" bindtap="closeBtn" src="../../images/close.png"></image>
+</block>
+
+
+<view wx:if="{{isShow}}">
+    
+  <view class='header'>
+    <image src='../../images/about.png'></image>
+  </view>
+ 
+  <view class='content'>
+    <view>申请获取以下权限</view>
+    <text>手机号码:仅用于发奖</text>
+  </view>
+  <button type='primary' class='bottom' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">同意</button>
+</view>
+
+<block wx:else>
+<image id="bg" src="../../images/shopBg2.png">
+</image>
+
+<view id="container">
+  <image id="ticket" src="../../images/ticket.png"></image>
+  <view id="ticketLine">
+    <view class="ticketTxt0">剩余</view>
+    <view class="ticketTxt1">{{myGoodsInfo.ticket}}</view>
+    <view class="ticketTxt0">张</view>
+  </view>
+  <view id="ticketBtn" bindtap="clickGetTicket">点击拿粮票</view>
+  
+  <view id="shopGoodsTitle">您当前获得</view>
+
+  <view class="goodsItem">
+    <view class="leftItems">
+      <view class="goodsTxt0">{{baseGoodsInfo[0].chname}}</view>
+      <view class="goodsTxt1">{{myGoodsInfo.rice}} 克</view>
+       <view class="goodsTxt2">满5公斤发货</view>
+    </view>
+    <view class="rightItems">
+      <block wx:if="{{fullGoodsNums[0]}}>0">
+        <image class="icon" src="../../images/riceIcon.png" mode="aspectFit"></image>
+        <view class="iconNum">{{fullGoodsNums[0]}}袋</view>
+      </block>
+    </view>
+  </view>
+   <view class="goodsBtnView">
+    <view class="exchangeBtn" data-bean="rice" bindtap='clickExchange'>兑换现金</view>
+    <view class="packBtn" data-bean="rice" bindtap='clickPack'>打包发货</view>
+  </view>
+  <view class="goodsItem">
+    <view class="leftItems">
+      <view class="goodsTxt0">{{baseGoodsInfo[1].chname}}</view>
+      <view class="goodsTxt1">{{myGoodsInfo.oil}} 毫升</view>
+      <view class="goodsTxt2">满1.8升发货</view>
+    </view>
+    <view class="rightItems">
+       <block wx:if="{{fullGoodsNums[1]}}>0">
+        <image class="icon" src="../../images/oilIcon.png" mode="aspectFit"></image>
+        <view class="iconNum">{{fullGoodsNums[1]}}瓶</view>
+      </block>
+    </view>
+  </view>
+   <view class="goodsBtnView">
+     <view class="exchangeBtn" data-bean="oil" bindtap='clickExchange'>兑换现金</view>
+    <view class="packBtn" data-bean="oil" bindtap='clickPack'>打包发货</view>
+  </view>
+  <view class="goodsItem">
+    <view class="leftItems">
+      <view class="goodsTxt0">{{baseGoodsInfo[2].chname}}</view>
+      <view class="goodsTxt1">{{myGoodsInfo.egg}} 个</view>
+      <view class="goodsTxt2">满10个发货</view>
+    </view>
+    <view class="rightItems">
+      <block wx:if="{{fullGoodsNums[2]}}>0">
+        <image class="icon" src="../../images/eggIcon.png" mode="aspectFit"></image>
+        <view class="iconNum">{{fullGoodsNums[2]}}个</view>
+      </block>
+    </view>
+  </view>
+  
+  <view class="goodsBtnView">
+     <view class="exchangeBtn" data-bean="egg" bindtap='clickExchange'>兑换现金</view>
+    <view class="packBtn" data-bean="egg" bindtap='clickPack'>打包发货</view>
+  </view>
+  <view class="txts">免费真货 不收邮费</view>
+  <view style="width:100%;height:200rpx;"></view>
+</view>
+</block>

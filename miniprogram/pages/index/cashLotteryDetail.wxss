@@ -1,0 +1,173 @@
+ 
+.header {
+    margin: 90rpx 0 90rpx 50rpx;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    width: 650rpx;
+    height: 300rpx;
+    line-height: 450rpx;
+}
+ 
+.header image {
+    width: 200rpx;
+    height: 200rpx;
+}
+ 
+.content {
+    margin-left: 50rpx;
+    margin-bottom: 90rpx;
+}
+ 
+.content text {
+    display: block;
+    color: #9d9d9d;
+    margin-top: 40rpx;
+}
+ 
+.bottom {
+    height:60rpx;
+    border-radius: 60rpx;
+    margin: 70rpx 50rpx;
+    font-size: 35rpx;
+
+}
+#bgView{
+  position: absolute;
+  top:0;
+  z-index:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  background: linear-gradient(to bottom right, #FF663A , #EA3BB8);
+}
+#titleView{
+
+  margin-top: 60rpx;
+  height:70rpx;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#titleTxt{
+  font-size: 52rpx;
+  color: white;
+}
+#ruleImg{
+
+  position: absolute;
+  right:0;
+  width:150rpx;
+  height:70rpx;
+  z-index: 3;
+}
+
+#detailImg0{
+
+  margin-top: 40rpx;
+  height:76rpx;
+  width:351rpx;
+}
+
+#detailImg1{
+
+  position: absolute;
+  top:282rpx;
+  left:83rpx;
+  width:584rpx;
+  height:20rpx;
+  z-index: 4;  
+}
+
+#detailTxt{
+  font-size: 32rpx;
+  color: white;
+  height:40rpx;
+  margin-top: 25rpx;
+  text-align: center; 
+  line-height: 40rpx;
+}
+
+#boxView{
+
+  width:100%;
+  margin-top: 65rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /*
+  解决办法： 子布局的父布局一定要设置position: relative。
+
+如果父元素 不加这个属性 就会再往外面一层，如果外面一层还未找到relative就继续向外 最终相对于body。 找到哪一层有relative，就相对于那个父布局。
+  */
+}
+#adView{
+  width:691rpx;
+}
+
+
+#boxImg{
+
+  width:691rpx;
+  height:768rpx;
+}
+
+#boxTitleView{
+
+  position: absolute;
+  top:225rpx;
+  height:50rpx;
+  z-index: 10;
+  font-size: 42rpx;
+  line-height: 50rpx;
+  color: #E34B00;
+}
+
+.boxAniTxtView{
+  position: absolute;
+  width:100rpx;
+  height:152rpx;
+  top:347rpx;
+  z-index: 11;
+  line-height: 152rpx;
+  font-size:130rpx;
+  text-align: center;
+  color:#FF4700;
+}
+#adTxt{
+  position: absolute;
+  height:120rpx;
+  bottom:70rpx;
+  z-index: 12;
+  color: #E34B00;
+}
+.boxBtn{
+  position: absolute;
+  height:120rpx;
+  bottom:20rpx;
+  z-index: 12;
+}
+.boxBtnTxt{
+  position: absolute;
+  bottom:60rpx;
+  height:56rpx;
+  z-index: 15;
+  font-size: 46rpx;
+  line-height: 56rpx;
+  color: white;
+}
+
+#joinNum{
+
+  font-size: 28rpx;
+  color: white;
+  height:36rpx;
+  margin-top: 120rpx;
+  text-align: center; 
+  line-height: 36rpx;
+}

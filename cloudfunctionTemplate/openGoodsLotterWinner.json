@@ -1,0 +1,46 @@
+[
+  {
+    "name": "test",
+    "value": {
+      "goodsId": "BOWOksunQdvc4ir2hz4ntqLG5AwkoYCpaRAvGmUAujl7aWpe",
+      "prizeInfo": [
+        {
+          "prizeLevel": 1,
+          "customerId": "user1",
+          "trueName": "张三1",
+          "mobile": "111"
+        },
+        {
+          "prizeLevel": 2,
+          "customerId": "user2",
+          "trueName": "张三2",
+          "mobile": "222"
+        },
+        {
+          "prizeLevel": 2,
+          "customerId": "user3",
+          "trueName": "张三3",
+          "mobile": "333"
+        },
+        {
+          "prizeLevel": 3,
+          "customerId": "user4",
+          "trueName": "张三4",
+          "mobile": "444"
+        },
+        {
+          "prizeLevel": 3,
+          "customerId": "user5",
+          "trueName": "张三5",
+          "mobile": "555"
+        },
+        {
+          "prizeLevel": 3,
+          "customerId": "user6",
+          "trueName": "张三6",
+          "mobile": "666"
+        }
+      ]
+    }
+  }
+]

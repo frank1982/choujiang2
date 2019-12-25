@@ -1,0 +1,97 @@
+<view>
+  <image src="../../images/banner.png" id="bannerImg"></image>
+  <view id="bgView">
+    <view id="usView">
+      <view id="iconsView">
+        <image class="iconUs" src="../../images/01.png"></image>
+        <image class="iconUs" src="../../images/02.png"></image>
+        <image class="iconUs" src="../../images/03.png"></image>
+      </view>
+      <view id="iconsTxtView">
+        <text class="iconTxtUs" decode='true'>花点时间\n动动手指</text>
+        <text class="iconTxtUs" decode='true'>空闲时间\n惊喜有礼</text>
+        <text class="iconTxtUs" decode='true'>安全健康\n有趣好玩</text>
+      </view>
+
+    </view>
+    
+   
+
+    <image class="shopTitle" src="../../images/shopTitle.png"></image>
+    <view id="shopView">
+      <image id="shopBg" src="../../images/shopBg.png"></image>
+      <view id="shopName">花花小百货</view>
+      <view id="shopNotice" wx:if="{{shopNoticeTxt}}">{{shopNoticeTxt}}</view>
+      <view id="shopBtn" bindtap="clickGoShop">马上抢</view>
+    </view>
+
+    
+     <view id="xianjinTitleView" wx:if="{{cashLotteryList}}">
+      <view id="xianjinTitleViewLeft">
+        <image class="titleImg" src="../../images/xianjinTitleImg.png"></image>
+      </view>
+      <view id="xianjinTitleViewRight"><text id="noticeTxt0">{{noticeTxt0}}</text><text id="noticeTxt1">{{noticeTxt1}}</text></view>
+    </view>
+    <scroll-view id="cashLotteryScroll" scroll-x="true" bindscroll="scroll" wx:if="{{cashLotteryList}}" scroll-left="{{scrollLeft}}" bindscroll="listenScroll">
+      <view class="cashLotteryScrollItem" wx:for="{{cashLotteryList}}">
+        <view class="scrollItem">
+          <image class="{{item.status<=1?'cashLotteryTitle':'cashLotteryTitleDisabled'}}" src="{{item.cashLotteryTitle}}"></image>
+          <image class="{{item.status<=1?'cashLotteryBox':'cashLotteryBoxDisabled'}}" src="../../images/cashLotteryBox.png" bindtap="clickCashLottery" data-bean="{{item.cashLotteryId}}"></image>
+          <text class="{{item.status<=1?'cashLotteryTxtA':'cashLotteryTxtADisabled'}}" style='pointer-events: none'>{{item.cashLotteryTxtA}}</text>
+          <text class="{{item.status<=1?'cashLotteryTxtB':'cashLotteryTxtBDisabled'}}" style='pointer-events: none'>现金红包</text>
+          <text class="{{item.status<=1?'cashLotteryTxtC':'cashLotteryTxtCDisabled'}}" style='pointer-events: none'>可提现</text>
+          <text class="cashLotteryBtnTxt" style='pointer-events: none'>{{item.cashLotteryBtnTxt}}</text>
+        </view>
+      </view> 
+    </scroll-view>
+ 
+
+    <view id="homeAdView">
+        <ad unit-id="adunit-2bf5fa40a6b8f049" ad-type="video" ad-theme="white"></ad>
+      </view>
+    <view id="footView">已经到底啦
+    </view>
+  </view>
+
+  
+
+  
+  <view class="tabView">
+    <view class="tabBtnBgView">
+      <view class="tabBtnChildViewA">
+        <image class="btnIconImg" src="../../images/index1.png"></image>
+      </view>
+      <view class="tabBtnChildViewB" >
+        <text class="btnTxtSelected">福利</text>
+      </view>
+    </view>
+    
+    <view class="tabBtnBgView" bindtap="clickMyShopGoods">
+      <view class="tabBtnChildViewA" style='pointer-events: none'>
+        <image class="btnIconImg" src="../../images/shopcar.png" style='pointer-events: none'></image>
+      </view>
+      <view class="tabBtnChildViewB" style='pointer-events: none'>
+        <text class="btnTxtSelected" style='pointer-events: none'>百货</text>
+      </view>
+    </view>
+
+    <view class="tabBtnBgView" bindtap="clickTicket">
+      <view class="tabBtnChildViewA" style='pointer-events: none'>
+        <image class="btnIconImg" src="../../images/t.png" style='pointer-events: none'></image>
+      </view>
+      <view class="tabBtnChildViewB" style='pointer-events: none'>
+        <text class="btnTxtSelected" style='pointer-events: none'>拿粮票</text>
+      </view>
+    </view>
+    
+    <view class="tabBtnBgView"  bindtap="clickMe">
+      <view class="tabBtnChildViewA" style='pointer-events: none'>
+        <image class="btnIconImg" src="../../images/me1.png"  style='pointer-events: none'></image>
+      </view>
+      <view class="tabBtnChildViewB" style='pointer-events: none'>
+        <text class="btnTxtSelected" style='pointer-events: none'>钱包</text>
+      </view>
+    </view>
+  </view>
+  
+</view>

@@ -1,0 +1,37 @@
+{
+  "pages": [
+
+    "pages/index/home",
+    "pages/index/myTicket",
+    "pages/index/invitedHome",
+    "pages/index/shopDetail",
+    "pages/index/myShopGoods",
+    
+    "pages/index/myShopGoodsPackingEnsure",
+
+    "pages/index/noGoodsApply",
+    "pages/index/contact",
+    "pages/index/ensureGoodsLotteryInfo",
+    "pages/index/goodsApply",
+    
+    "pages/index/cashLotteryRule",
+    "pages/index/myLottery", 
+    "pages/index/tixianEnsure",  
+    "pages/index/cashLotteryDetail",
+    "pages/index/cashLotteryResult",
+    "pages/index/cashBag",
+    "pages/index/me",  
+    "pages/index/help",
+    "pages/index/goodsDetail",
+    "pages/index/tixianDetail"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF4700",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

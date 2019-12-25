@@ -1,0 +1,32 @@
+
+
+<view id="successBg" wx:if="{{isShow}}">
+  <image src="../../images/modal.png" id="modalPng"></image>
+   <text id="modalTxt0">提现申请成功</text>
+   <text id="modalTxt1">请注意查收资金</text>
+   <view class="okBtn" bindtap="okBtn">我知道了</view>
+</view>
+
+<view id="tixianNoticeView">为了保证提现成功，请确保姓名和手机号码准确哦</view>
+<view class="infoView" id="info0">
+  <view class='txt0'>真实姓名</view>
+  <input type="text" placeholder="{{pname}}" placeholder-class="placeholderStyle" id='input0' value="{{inputName}}" bindinput='formName' maxlength='4'></input>
+</view>
+<view class="infoView" id="info1">
+  <view class='txt0'>手机号码</view>
+  <view id='mobileTxt'>{{mobileStr}}</view>
+</view>
+<view id="openNoticeView">重要提醒，请务必开通支付宝等</view>
+<view class="ensureBtn" bindtap="clickEnsureBtn">确认</view>
+
+<ad unit-id="adunit-ed217327341661da"></ad>
+
+<!--
+<view class="openStepTxt">第一步打开: 我 -- 支付</view>
+<image class="openStepImg" src="../../images/s1.png"></image>
+<view class="openStepTxt">第二步打开: 右上角 ...</view>
+<image class="openStepImg" src="../../images/s2.png"></image>
+<view class="openStepTxt">第三步打开: 允许通过手机号码向我转账</view>
+<image class="openStepImg" src="../../images/s3.png"></image>
+<view class="openStepTxt">以上是打开接受转账的功能</view>
+-->

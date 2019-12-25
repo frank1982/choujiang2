@@ -1,0 +1,183 @@
+page{
+
+  display: flex;
+}
+ 
+.header {
+    margin: 90rpx 0 90rpx 50rpx;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    width: 650rpx;
+    height: 300rpx;
+    line-height: 450rpx;
+}
+ 
+.header image {
+    width: 200rpx;
+    height: 200rpx;
+}
+ 
+.content {
+    margin-left: 50rpx;
+    margin-bottom: 90rpx;
+}
+ 
+.content text {
+    display: block;
+    color: #9d9d9d;
+    margin-top: 40rpx;
+}
+ 
+.bottom {
+    height:60rpx;
+    border-radius: 60rpx;
+    margin: 70rpx 50rpx;
+    font-size: 35rpx;
+
+}
+#topView{
+
+  width:100%;
+  height:250rpx;
+  background-color: #FF4700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#headImg{
+  width:120rpx;
+  height:120rpx;
+  background-color: white;
+  margin-top: 40rpx;
+  border-radius:60rpx;
+}
+#headTxt{
+
+  color: white;
+  text-align: center;
+  margin-top: 18rpx;
+  font-size:36rpx;
+}
+#aView{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+ 
+}
+.cashTxt{
+  text-align: center;
+  font-size:55rpx;
+  width:100%;
+  height:100rpx;
+  line-height: 100rpx;
+}
+#bView{
+  display: flex;
+  flex-direction: row;
+  width:100%
+}
+.cashType{
+  text-align: center;
+  font-size:36rpx;
+  width:100%;
+  height:90rpx;
+  line-height: 90rpx;
+}
+#cView{
+  display: flex;
+  flex-direction: row;
+  width:100%
+}
+.cashDo{
+  text-align: center;
+  font-size:36rpx;
+  width:100%;
+  height:90rpx;
+  line-height: 90rpx;
+  color: #FF4700;
+}
+/*
+#midView{
+
+  width:100%;
+  height:200rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#cashTxt{
+  margin-top: 48rpx;
+  text-align: center;
+  font-size:50rpx;
+}
+#cashTxtTitle{
+  margin-top: 14rpx;
+  text-align: center;
+  color: #FF4700;
+  font-size:36rpx;
+}
+*/
+#listView{
+
+  margin-top: 20rpx;
+  background-color: white;
+  width:100%;
+  height:110rpx;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detailTxt{
+  
+  margin-left: 32rpx;
+  font-size: 36rpx;
+}
+#rightImg{
+
+  height:32rpx;
+  width:20rpx;
+  margin-right: 32rpx;
+}
+#kefu{
+  margin-top: 20rpx;
+  background-color: white;
+  width:750rpx;
+  height:110rpx;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0rpx;
+  padding-right: 0rpx;
+}
+#rightImg2{
+
+  height:32rpx;
+  width:20rpx;
+  margin-right: 32rpx;
+}
+.myShiwuListView{
+  
+  margin-top: 20rpx;
+}
+.myShiwuLotteryView{
+
+  width:100%;
+  background-color: white;
+  height:110rpx;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myShiwuLotteryTxt{
+  margin-left: 32rpx;
+  font-size: 36rpx;
+}
+.myShiwuLotteryStatusTxt{
+  margin-right: 32rpx;
+  font-size: 36rpx;
+  color:#FF4700;
+}

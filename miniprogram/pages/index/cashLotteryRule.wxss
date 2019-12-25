@@ -1,0 +1,7 @@
+#ruleView{
+
+  font-size:24rpx;
+  margin-top: 20rpx;
+  width:700rpx;
+  margin-left: 25rpx;
+}

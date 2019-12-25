@@ -1,0 +1,141 @@
+
+
+.header {
+  margin: 90rpx 0 90rpx 50rpx;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  width: 650rpx;
+  height: 300rpx;
+  line-height: 450rpx;
+ 
+}
+
+.header image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.content {
+  margin-left: 50rpx;
+  margin-bottom: 90rpx;
+}
+
+.content text {
+  display: block;
+  color: #9d9d9d;
+  margin-top: 40rpx;
+}
+
+.bottom {
+  height:60rpx;
+  border-radius: 60rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
+  line-height: 60rpx;
+}
+.item{
+  margin-top: 20rpx;
+  flex-direction: row;
+  display: flex;
+}
+#lookForTicket{
+
+}
+#inviteTicket{
+
+}
+.leftView{
+
+  width:550rpx;
+  height:200rpx;
+
+}
+.rightView{
+  display: flex;
+  width:200rpx;
+  height:200rpx;
+  justify-content: center;
+  align-items: center;
+}
+/*
+background: linear-gradient(to right, #F84F53,#FF7A2B);
+*/
+.btn{
+  width:180rpx;
+  height:75rpx;
+  background: linear-gradient(to right, #F84F53,#FF7A2B);
+  color:white;
+  text-align: center;
+  line-height: 75rpx;
+  font-size: 32rpx;
+  border-radius: 75rpx;
+}
+.sharep{
+  height:75rpx;
+  width:180rpx;
+ 
+} 
+button::after {
+  border: none;
+}
+button {
+  background-color: #fff;
+} 
+#shareBtn{
+
+  width:180rpx;
+  height:75rpx;
+  background: linear-gradient(to right, #F84F53,#FF7A2B);
+  color:white;
+  font-size: 32rpx;
+  line-height: 75rpx;
+  border-radius: 75rpx;
+
+}
+.line0{
+  width:550rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  padding-left: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.icon{
+
+  width:10rpx;
+  height:60rpx;
+  background: linear-gradient( #F84F53,#FF7A2B);
+}
+.title{
+
+  font-size: 45rpx;
+  margin-left: 10rpx;
+}
+.line1{
+  width:550rpx;
+  height:100rpx;
+  color:#696969;
+  font-size:36rpx;
+  line-height: 100rpx;
+  padding-left: 30rpx;
+}
+.target{
+
+  display: flex;
+  flex-direction: row;
+}
+.name{
+ font-size: 42rpx;
+ color:#696969;
+ height:80rpx;
+ width:500rpx;
+ line-height: 80rpx;
+ padding-left: 30rpx;
+}
+.ticket{
+  font-size: 42rpx;
+  width:250rpx;
+  height:80rpx;
+  color:#F84F53;
+  line-height: 80rpx;
+}

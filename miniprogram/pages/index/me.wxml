@@ -1,0 +1,78 @@
+
+
+<view wx:if="{{isHide}}">
+    
+  <view class='header'>
+    <image src='../../images/about.png'></image>
+  </view>
+ 
+  <view class='content'>
+    <view>申请获取以下权限</view>
+    <text>手机号码:仅用于发奖</text>
+  </view>
+  <button type='primary' class='bottom' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">同意</button>
+  <!--
+  <button class='bottom' type='primary' open-type="getPhoneNumber" lang="zh_CN" bindgetphonenumber="getPhoneNumber">
+    授权手机号码
+  </button>
+  -->
+</view>
+
+<view id="bgView" wx:else>
+<view id="topView">
+  <image id="headImg" src="{{headImgSrc}}"></image>
+  <view id="headTxt">{{nameShow}}</view>
+</view>
+
+  <view id="bView">
+    <view class="cashType">现金</view>
+    <!--
+    <view class="cashType">元宝</view>
+    -->
+  </view>
+  <view id="aView">
+    <view class="cashTxt">{{freeBalance}}</view>
+    <!--
+    <view class="cashTxt">{{freeCoin}}</view>
+    -->
+  </view>
+  
+  <view id="cView">
+    <view class="cashDo" bindtap="clickCashBag">去提现></view>
+    <!--
+    <view class="cashDo">满1000去换钱></view>
+    -->
+  </view>
+
+<!--
+<view id="midView">
+  
+  <view id="cashTxt" bindtap="clickCashBag">{{freeBalance}}</view>
+  <view id="cashTxtTitle" bindtap="clickCashBag">去提现></view>
+  
+</view>
+-->
+
+<!--
+<view id="listView" bindtap="clickHelp">
+  <view class="detailTxt" style='pointer-events: none'>如何收款</view>
+  <image id="rightImg" src="../../images/right.png" style='pointer-events: none'></image>
+</view>
+-->
+<button open-type='contact' id='kefu' session-from='weapp'>
+  <view class="detailTxt" style='pointer-events: none'>联系客服</view>
+  <image id="rightImg2" src="../../images/right.png" style='pointer-events: none'></image>
+  </button> 
+
+<view class="myShiwuListView">
+  <view class="myShiwuLotteryView">
+    <view class="myShiwuLotteryTxt">实物中奖记录</view>
+  </view>
+  <view class="myShiwuLotteryView" wx:for="{{myShiwuLotteryInfo}}" bindtap="clickMyGoods" data-bean="{{item}}">
+    <view class="myShiwuLotteryTxt" style='pointer-events: none'>{{item.myPrizeName}}</view>
+    <view class="myShiwuLotteryStatusTxt" style='pointer-events: none'>{{item.statusStr}}</view>
+
+  </view>
+</view>
+<ad unit-id="adunit-dc2bd106b0874c50" ad-type="video" ad-theme="white"></ad>
+</view>

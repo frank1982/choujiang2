@@ -1,0 +1,41 @@
+
+page{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#myBanner{
+  width:690rpx;
+  height:400rpx;
+  margin-top: 40rpx;
+  border-radius: 20rpx;
+}
+.ensureBtn{
+  margin-top: 100rpx;
+  height:88rpx;
+  width:690rpx;
+  background: linear-gradient(to right,#F84F51,#FF792B);
+  color:white;
+  text-align: center;
+  line-height: 88rpx;
+  margin-left: 30rpx;
+  border-radius:88rpx;
+}
+.infoView{
+
+  width:750rpx;
+  height:110rpx;
+  display: flex;
+  align-items: center;
+}
+#info0{
+  margin-top: 60rpx;
+}
+.txt0{
+  margin-left: 30rpx;
+  color: #A4A4A4;
+  font-size: 32rpx;
+}
+#input0{
+  margin-left: 73rpx;
+}

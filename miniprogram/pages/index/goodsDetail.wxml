@@ -1,0 +1,61 @@
+
+
+<view id="successBg" wx:if="{{isShow}}">
+  <image src="../../images/modal.png" id="modalPng"></image>
+   <text id="modalTxt0">参与抽奖成功</text>
+   <text id="modalTxt1">{{detail.lotteryTime}}</text>
+   <view class="okBtn" bindtap="okBtn">我知道了</view>
+</view>
+<view wx:if="{{isHide}}">
+ <view class='header'>
+    <image src='../../images/about.png'></image>
+  </view>
+ 
+  <view class='content'>
+    <view>申请获取以下权限</view>
+    <text>手机号码:仅用于发奖</text>
+  </view>
+  <button type='primary' class='bottom' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">同意</button>
+</view>
+<view id="bgView" wx:else>
+<view id="container">
+<image class="goodsImg" src="{{detail.coverImg}}"></image>
+<view class="lineView0">
+  <image src="../../images/spIcon.png" class="spIcon" mode="aspectFit"></image>
+  <view class="spNameTxt">{{detail.sponsor}}</view>
+</view>
+<view class="priceTxt" wx:if="{{detail.price[0]}}">{{detail.price[0]}} </view>
+<view class="priceTxt" wx:if="{{detail.price[1]}}">{{detail.price[1]}} </view>
+<view class="priceTxt" wx:if="{{detail.price[2]}}">{{detail.price[2]}} </view>
+<view class="lotteryTimeTxt">{{detail.lotteryTime}}</view>
+
+<view id="summaryView">
+  <image id='summaryBg' src="../../images/goodsBg.png"></image>
+  <view id="summaryTxt">{{detail.detailSummary}}</view>
+</view>
+<form report-submit='true' bindsubmit="handleCollect">
+  <!--<Button form-type='submit' />-->
+  <view id="lotteryView">
+      <button class='confirmbtn' form-type='submit' id="lotteryBtn" wx:if="{{detail.status==0}}">即将开始</button>
+       <button class='confirmbtn' form-type='submit' id="lotteryBtn" wx:else>抽奖</button>
+      <!--
+     <button class='confirmbtn' form-type='submit' id="lotteryBtn" wx:elif="{{isLookedAd}}">抽奖</button>
+     
+     <button class='confirmbtn' form-type='submit' id="lotteryBtn2" wx:else>看完视频抽奖</button>
+     -->
+     <!--
+    <View id="lotteryBtn" bindtap="clickGoodsLottery" form-type='submit'>抽奖</View>
+    -->
+  </view>
+</form>
+<view id="blankView"></view>
+</view>
+
+<view id="goodsTitleView">
+      <image class="titleImg" src="../../images/goodsDetail.png"></image>
+    </view>
+
+<block wx:for="{{detailImgList}}">
+  <image src="{{detailImgList[index]}}" class="detailImg" mode='widthFix'></image>
+</block>
+</view>

@@ -1,0 +1,415 @@
+page{
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+#bannerImg{
+
+  width:100%;
+  height:350rpx;
+  position:absolute;
+  z-index:0;
+  top:0;
+}
+#bgView{
+
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  position:absolute;
+  z-index:1;
+  top:320rpx;
+  width:100%;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  overflow-x:hidden;
+}
+#usView{
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+}
+#iconsView{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width:100%;
+}
+#iconsTxtView{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width:100%;
+  margin-top: 20rpx;
+}
+.iconUs{
+  width:120rpx;
+  height:120rpx;
+}
+.iconTxtUs{
+
+  width:250rpx;
+  height:100rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+/*
+#usTxt0{
+  
+}
+#usTxt1{
+  
+}
+.usc{
+  width:50%;
+  height:80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 30rpx;
+}
+.usIcon{
+  width:45rpx;
+  height:45rpx;
+}
+.usLabel{
+  margin-left: 20rpx;
+  color: #FF4700;
+}
+*/
+#homeAdView{
+  width:690rpx;
+  margin-left: 30rpx;
+  margin-top: 50rpx;
+  box-shadow:0rpx 0rpx 12rpx 4rpx  rgba(0,0,0,0.1);
+}
+#homeAdView2{
+  width:690rpx;
+  margin-top: 60rpx;
+  margin-left: 30rpx;
+  box-shadow:0rpx 0rpx 12rpx 4rpx  rgba(0,0,0,0.1);
+}
+#xianjinTitleView{
+
+  margin-top: 55rpx;
+  width:100%;
+  height:50rpx;
+  display: flex;
+}
+#xianjinTitleViewLeft{
+  width:50%;
+  height:50rpx;
+
+}
+.titleImg{
+  width:209rpx;
+  height:50rpx;
+  margin-left:30rpx;
+}
+#xianjinTitleViewRight{
+  width:50%;
+  height:50rpx;
+  background-color: #F2F2F2;
+  border-top-left-radius: 25rpx;
+  border-bottom-left-radius: 25rpx;
+  line-height: 50rpx;
+  
+}
+#noticeTxt0{
+  font-size:26rpx;
+  margin-left: 20rpx;
+}
+#noticeTxt1{
+  font-size:26rpx;
+  color:#FF4700;
+}
+
+#cashLotteryScroll{
+
+  margin-top: 55rpx;
+  height:367rpx;
+  width:750rpx;
+  white-space: nowrap; /*不换行!*/
+}
+.cashLotteryScrollItem{
+
+  display: inline-block;/*!*/
+}
+.scrollItem{
+
+  height:367rpx;
+  width:453rpx;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.cashLotteryTitle{
+
+  width:220rpx;
+  height:42rpx;
+  position: absolute;
+  z-index: 2;
+  top:0rpx;
+}
+.cashLotteryTitleDisabled{
+
+  width:220rpx;
+  height:42rpx;
+  position: absolute;
+  z-index: 2;
+  top:0rpx;
+  filter:grayscale(100%);
+}
+.cashLotteryBox{
+  width:393rpx;
+  height:367rpx;
+  position: absolute;
+  z-index: 1;
+  top:0rpx;
+}
+.cashLotteryBoxDisabled{
+  width:393rpx;
+  height:367rpx;
+  position: absolute;
+  z-index: 1;
+  top:0rpx;
+  filter:grayscale(100%);
+}
+.cashLotteryTxtA{
+  color: #E34B00;
+  position: absolute;
+  z-index: 3;
+  top:52rpx;
+  font-size: 26rpx;
+}
+.cashLotteryTxtADisabled{
+  color: #E34B00;
+  position: absolute;
+  z-index: 3;
+  top:52rpx;
+  font-size: 26rpx;
+  filter:grayscale(100%);
+}
+.cashLotteryTxtB{
+  color: #F7033F;
+  position: absolute;
+  z-index: 3;
+  top:110rpx;
+  font-size: 44rpx;
+}
+.cashLotteryTxtBDisabled{
+  color: #F7033F;
+  position: absolute;
+  z-index: 3;
+  top:110rpx;
+  font-size: 44rpx;
+  filter:grayscale(100%);
+}
+.cashLotteryTxtC{
+  color: #F7033F;
+  position: absolute;
+  z-index: 3;
+  top:168rpx;
+  font-size: 26rpx;
+}
+.cashLotteryTxtCDisabled{
+  color: #F7033F;
+  position: absolute;
+  z-index: 3;
+  top:168rpx;
+  font-size: 26rpx;
+  filter:grayscale(100%);
+}
+.cashLotteryBtnTxt{
+  color:white;
+  position: absolute;
+  z-index: 3;
+  top:266rpx;
+  font-size: 28rpx;
+
+}
+/*
+#goodsTitleView{
+
+  margin-top: 55rpx;
+  width:100%;
+  height:50rpx;
+  display: flex;
+}
+
+.goodsItemView{
+  width:690rpx;
+  border-radius: 20rpx;
+  background-color: white;
+  margin-top: 60rpx;
+  margin-left: 30rpx;
+  box-shadow:0rpx 0rpx 12rpx 4rpx  rgba(0,0,0,0.1);
+}
+.goodsImgView{
+
+  width:690rpx;
+  height:310rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goodsTxtView{
+
+  width:690rpx;
+  display: flex;
+  flex-flow: column;
+}
+.lineView0{
+  height:34rpx;
+  margin-top: 26rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row;
+}
+.spIcon{
+  height:34rpx;
+  width:130rpx;
+  margin-left: 40rpx;
+}
+.goodsImg{
+  height:310rpx;
+  width:690rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.spNameTxt{
+  height:34rpx;
+  margin-left: 20rpx;
+  font-size:24rpx;
+  line-height: 34rpx;
+}
+.lotteryTimeTxt{
+  height:34rpx;
+  color:#A4A4A4;
+  line-height: 34rpx;
+  font-size:24rpx;
+  margin-left: 40rpx;
+  margin-top: 14rpx;
+}
+.priceTxt{
+  font-size:26rpx;
+  height:40rpx;
+  line-height: 40rpx;
+  margin-left: 40rpx;
+  margin-top: 15rpx;
+}
+*/
+#footView{
+
+  width:100%;
+  height:36rpx;
+  margin-top: 60rpx;
+  font-size: 32rpx;
+  color:#E2E2E2;
+  margin-bottom: 60rpx;
+  text-align: center;
+  line-height: 36rpx
+}
+.tabView{
+
+  background-color: white;
+  position: fixed;
+  bottom:0rpx;
+  border-top: 1px solid #E5E5E5; 
+  z-index:99;
+  display: flex;
+  flex-direction: row;
+  
+}
+.tabBtnBgView{
+
+  
+}
+.tabBtnChildViewA{
+  width:187.5rpx;
+  height:70rpx;
+  display: flex;
+  justify-content: center;
+}
+.tabBtnChildViewB{
+  width:187.5rpx;
+  height:40rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.btnIconImg{
+  
+  height: 50rpx;
+  width:50rpx;
+  margin-top: 14rpx;
+
+}
+.btnTxt{
+  font-size: 24rpx;
+  color: #B8C1C7;
+}
+.btnTxtSelected{
+
+  font-size: 24rpx;
+  color: #FF4700; 
+}
+
+.shopTitle{
+  height:50rpx;
+  width:300rpx;
+  margin-left:30rpx;
+  margin-top: 55rpx;
+}
+#shopView{
+  position:relative;
+}
+#shopBg{
+  margin-top: 60rpx;
+  width:100%;
+  height:1000rpx;
+}
+#shopName{
+  position:absolute;
+  z-index:99;
+  top:77rpx;
+  text-align: center;
+  height:50rpx;
+  line-height: 50rpx;
+  width:100%;
+  color:white;
+  font-size: 42rpx;
+}
+#shopNotice{
+  position:absolute;
+  z-index:99;
+  top:300rpx;
+  background-color: rgba(228,38,30,0.60);
+  border-radius: 22rpx;
+  width:500rpx;
+  height:80rpx;
+  margin-left: 125rpx;
+  text-align: center;
+  color:white;
+  line-height: 80rpx;
+  font-size: 42rpx;
+}
+#shopBtn{
+  
+  position:absolute;
+  z-index:99;
+  top:780rpx;
+  text-align: center;
+  height:80rpx;
+  line-height: 80rpx;
+  width:400rpx;
+  margin-left: 175rpx;
+  background: linear-gradient(#FFE743, #FF7B00);
+  border-radius: 40rpx;
+  color:white;
+  font-size: 42rpx;
+}

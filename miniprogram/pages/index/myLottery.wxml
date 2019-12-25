@@ -1,0 +1,18 @@
+<image src="../../images/myLotteryBanner.png" id="myBanner"></image>
+<view class="infoView" id="info0">
+  <view class='txt0'>奖品名称</view>
+  <input type="text"></input>
+</view>
+<view class="infoView" id="info1">
+  <view class='txt0'>奖品数量</view>
+  <input type="text"></input>
+</view>
+<view class="infoView" id="info2">
+  <view class='txt0'>开奖时间</view>
+  <input type="text"></input>
+</view>
+<view class="infoView" id="info3">
+  <view class='txt0'>抽奖规则</view>
+  <input type="text"></input>
+</view>
+<view class="ensureBtn" bindtap="clickEnsureBtn">即将开放</view>

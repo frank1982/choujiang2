@@ -1,0 +1,71 @@
+<block wx:if="{{isResultShow}}">
+  <view class="ticketBg"></view>
+  <view id="resultBg"></view>
+  <image id="resultImg0" src="../../images/resultBg.png"></image>
+  <view id="resultC">
+    <image id="resultImg1" src="{{resultInfo.resultImg}}" mode="aspectFit"></image>
+  </view>
+  <view id="resultTxt">{{resultInfo.resultTxt}}</view>
+  <view id="resultTxt1">{{resultInfo.resultTxt1}}</view>
+  <view id="resultBtn" bindtap="clickResultBtn">继续抽</view>
+  <view id="resultBtn2" bindtap="clickMyShopBtn">去看看</view>
+  <view id="resultTxt2">可兑换现金哦</view>
+</block>
+
+<block wx:if="{{isTicketAlertShow}}">
+  <view class="ticketBg"></view>
+  <view id="ticketTitle">{{ticketTitle}}</view>
+  <image id="ticketImg" src="../../images/bigTicket.png"></image>
+  <view id="ticketTxt">{{myTicket}}张</view>
+  <view id="ticketBtn0" bindtap="clickLook">看视频 拿粮票</view>
+  <image id="ticketBtn1" src="../../images/close.png" bindtap="closeTicketAlert"></image>
+</block>
+
+<view wx:if="{{isShow}}">
+    
+  <view class='header'>
+    <image src='../../images/about.png'></image>
+  </view>
+ 
+  <view class='content'>
+    <view>申请获取以下权限</view>
+    <text>手机号码:仅用于发奖</text>
+  </view>
+  <button type='primary' class='bottom' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">同意</button>
+</view>
+
+<block wx:else>
+<image id="bg" src="../../images/shopBg2.png">
+</image>
+
+<view id="container">
+  <image id="ticket" src="../../images/ticket.png"></image>
+  <view id="ticketLine">
+    <view class="ticketTxt0">剩余</view>
+    <view class="ticketTxt1">{{myTicket}}</view>
+    <view class="ticketTxt0">张</view>
+  </view>
+  <view id="ticketBtn" bindtap="clickGetTicket">点击拿粮票</view>
+  <view id="icons">
+    <image class="icon" src="../../images/rice.png" mode="aspectFit"></image>
+    <image class="icon" src="../../images/oil.png" mode="aspectFit"></image>
+    <image class="icon" src="../../images/egg.png" mode="aspectFit"></image>
+  </view>
+
+  <view id="lotteryView">
+    <image id="lotteryBg" src="../../images/huogui.png"></image>
+    <view id="lotteryBtn"></view>
+    <view id="lotteryBtn0"  bindtap="clickBtn">
+      <view id="btnTxt0" style='pointer-events: none'>免费抽</view>
+      <view id="btnTxt1" style='pointer-events: none'>需要一张粮票</view>
+    </view>
+  </view>
+</view>
+
+
+
+<image class="shopGoodsImg" src="cloud://test-asni1.7465-test-asni1-1300598427/shopGoods/rice.jpg" mode="widthFix"></image>
+<image class="shopGoodsImg" src="cloud://test-asni1.7465-test-asni1-1300598427/shopGoods/oil.jpg" mode="widthFix"></image>
+<image class="shopGoodsImg" src="cloud://test-asni1.7465-test-asni1-1300598427/shopGoods/egg1.jpg" mode="widthFix"></image>
+<image class="shopGoodsImg" src="cloud://test-asni1.7465-test-asni1-1300598427/shopGoods/egg2.jpg" mode="widthFix"></image>
+</block>

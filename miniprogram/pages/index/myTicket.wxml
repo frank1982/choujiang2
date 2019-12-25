@@ -1,0 +1,63 @@
+<view wx:if="{{isAuthShow}}">
+    
+  <view class='header'>
+    <image src='../../images/about.png'></image>
+  </view>
+ 
+  <view class='content'>
+    <view>申请获取以下权限</view>
+    <text>手机号码:仅用于发奖</text>
+  </view>
+  <button type='primary' class='bottom' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">同意</button>
+</view>
+
+<view id="container" wx:else>
+  <view class="item" id="lookForTicket">
+    <view class="leftView">
+      <view class="line0">
+        <view class='icon'></view>
+        <view class="title">看视频拿粮票</view>
+      </view>
+      <view class="line1">
+        每天都可以看视频拿粮票哦
+      </view>
+    </view>
+    <view class="rightView">
+      <view class="btn" bindtap="go0">去拿</view>
+    </view>
+  </view>
+  <view class="item" id="inviteTicket">
+    <view class="leftView">
+       <view class="line0">
+         <view class='icon'></view>
+         <view class="title">邀请新用户得粮票</view>
+       </view>
+       <view class="line1">
+        新用户拿粮票，自己也得1张哦
+       </view>
+    </view>
+    <view class="rightView">
+      <view class="sharep">
+      
+        <button id="shareBtn" open-type='share' size="mini">邀请</button>
+        
+      </view>
+    </view>
+  </view>
+
+
+
+       <view class="line0">
+         <view class='icon'></view>
+         <view class="title">邀请记录</view>
+       </view>
+
+
+
+  <block wx:if="{{targetRecords.length > 0}}">
+    <view class="target" wx:for="{{targetRecords}}">
+      <view class="name">{{targetRecords[index].name}}</view>
+      <view class="ticket">+{{targetRecords[index].ticketNum}}张粮票</view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,9 @@
+{
+  "triggers": [
+    {
+      "name": "monitor0Trigger",
+      "type": "timer",
+      "config": "0 0 */1 * * * *"
+    }
+  ]
+}

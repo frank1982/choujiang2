@@ -1,0 +1,224 @@
+page{
+  display: flex;
+  background: #f6f6f6;
+}
+#successBg{
+
+    position: absolute;
+    z-index:8;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0,0.6);
+    display: flex;
+    top:0;
+}
+
+#modalPng{
+
+  height:594rpx;
+  width:500rpx;
+  position: absolute;
+  top:242rpx;
+  z-index: 9;
+  left:125rpx;
+}
+#modalTxt0{
+  position: absolute;
+  z-index: 10;
+  color:#FF5028;
+  width:100%;
+  top: 500rpx;
+  font-size:44rpx;
+  text-align: center;
+
+}
+#modalTxt1{
+  position: absolute;
+  z-index: 11;
+  color:black;
+  width:100%;
+  top: 580rpx;
+  font-size:32rpx;
+  text-align: center;
+
+}
+.okBtn{
+  position: absolute;
+  z-index: 12;
+  top: 680rpx;
+  left:203rpx;
+  height:80rpx;
+  width:344rpx;
+  background: linear-gradient(to right,#F84F51,#FF792B);
+  color:white;
+  text-align: center;
+  line-height: 88rpx;
+  border-radius:88rpx;
+}
+.header {
+    margin: 90rpx 0 90rpx 50rpx;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    width: 650rpx;
+    height: 300rpx;
+    line-height: 450rpx;
+}
+ 
+.header image {
+    width: 200rpx;
+    height: 200rpx;
+}
+ 
+.content {
+    margin-left: 50rpx;
+    margin-bottom: 90rpx;
+}
+ 
+.content text {
+    display: block;
+    color: #9d9d9d;
+    margin-top: 40rpx;
+}
+ 
+.bottom {
+    height:60rpx;
+    border-radius: 80rpx;
+    margin: 70rpx 50rpx;
+    font-size: 35rpx;
+    line-height: 60rpx;
+}
+#container{
+  background-color: white;
+  width:100%;
+}
+.goodsImg{
+  height:337rpx;
+  width:750rpx;
+}
+.lineView0{
+  height:34rpx;
+  margin-top: 26rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row;
+}
+.spIcon{
+  height:34rpx;
+  width:130rpx;
+  margin-left: 30rpx;
+}
+.spNameTxt{
+  height:34rpx;
+  margin-left: 20rpx;
+  font-size:24rpx;
+  line-height: 34rpx;
+}
+.goodsTxtView{
+
+  width:690750rpx;
+  display: flex;
+  flex-flow: column;
+}
+
+.lotteryTimeTxt{
+  height:34rpx;
+  color:#A4A4A4;
+  line-height: 34rpx;
+  font-size:24rpx;
+  margin-left: 30rpx;
+  margin-top: 14rpx;
+}
+.priceTxt{
+  font-size:26rpx;
+  height:40rpx;
+  line-height: 40rpx;
+  margin-left: 30rpx;
+  margin-top: 15rpx;
+}
+#summaryView{
+
+  position: relative;
+  width:690rpx;
+  height:250rpx;
+  margin-left: 30rpx;
+  margin-top: 60rpx;
+
+}
+#summaryBg{
+
+  position: absolute;
+  z-index: 1;
+  width:690rpx;
+  height:250rpx;
+}
+#summaryTxt{
+
+  position: absolute;
+  z-index: 2;
+  color:#C57600; 
+  font-size: 24rpx;
+  width:600rpx;
+  top:50rpx;
+  left:45rpx;
+  word-break:break-all;
+}
+
+#lotteryView{
+
+  display: flex;
+  background-color: rgba(255,71,0,0.1);
+  width:360rpx;
+  height:360rpx;
+  border-radius: 360rpx;
+  margin-top: 70rpx;
+  margin-left: 195rpx;
+  justify-content: center;
+  align-items: center;
+}
+#lotteryBtn{
+  background-color: rgba(255,71,0,1);
+  width:300rpx;
+  height:300rpx;
+  border-radius: 300rpx;
+  color:white;
+  font-size: 52rpx;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+#lotteryBtn2{
+  background-color: rgba(255,71,0,1);
+  width:300rpx;
+  height:300rpx;
+  border-radius: 300rpx;
+  color:white;
+  font-size: 52rpx;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+#blankView{
+  width:100%;
+  height:100rpx;
+  background-color: white;
+}
+#goodsTitleView{
+  margin-top: 20rpx;
+  margin-top: 55rpx;
+  width:100%;
+  display: flex;
+  background-color: white;
+}
+.titleImg{
+  width:209rpx;
+  height:50rpx;
+  margin-left:30rpx;
+  margin-top: 60rpx;
+}
+
+.detailImg{
+  width:100%;
+}

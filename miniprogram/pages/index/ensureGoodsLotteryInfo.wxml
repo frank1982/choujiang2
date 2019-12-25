@@ -1,0 +1,22 @@
+
+
+<view id="successBg" wx:if="{{isShow}}">
+  <image src="../../images/modal.png" id="modalPng"></image>
+   <text id="modalTxt0">申请成功</text>
+   <text id="modalTxt1">即将为您配送奖品</text>
+   <view class="okBtn" bindtap="okBtn">我知道了</view>
+</view>
+
+<view id="tixianNoticeView">为了保证奖品配送，请确保姓名和手机号码准确哦</view>
+<view class="infoView" id="info0">
+  <view class='txt0'>真实姓名</view>
+  <input type="text" placeholder="{{pname}}" placeholder-class="placeholderStyle" id='input0' value="{{inputName}}" bindinput='inputName' maxlength='8'></input>
+</view>
+<view class="infoView" id="info1">
+  <view class='txt0'>手机号码</view>
+  <view id='mobileTxt'>{{mobileStr}}</view>
+</view>
+<textarea class="address" 
+    placeholder="{{paddress}}" value="{{inputAddress}}" bindinput='inputAddress'>
+    </textarea>
+<view class="ensureBtn" bindtap="clickEnsureBtn">确认</view>

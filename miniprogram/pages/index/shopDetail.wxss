@@ -1,0 +1,326 @@
+page{
+  position:relative;
+  background: white;
+}
+#resultImg0{
+
+  width:168rpx;
+  height:60rpx;
+  position: absolute;
+  top:510rpx;
+  z-index:7;
+  left:291rpx;
+
+}
+#resultC{
+  height:200rpx;
+  position: absolute;
+  top:330rpx;
+  z-index:7;
+  left:0rpx;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+#resultImg1{
+
+  height: 200rpx;
+  
+}
+#resultTxt{
+  height:100rpx;
+  position: absolute;
+  top:560rpx;
+  z-index:7;
+  left:0rpx;
+  width:100%;
+  text-align: center;
+  color:#FF5028;
+  font-size:42rpx;
+}
+#resultTxt1{
+  height:100rpx;
+  position: absolute;
+  top:660rpx;
+  z-index:7;
+  left:0rpx;
+  width:100%;
+  text-align: center;
+  font-size:46rpx;
+  font-weight: bolder;
+}
+#resultTxt2{
+  height:100rpx;
+  position: absolute;
+  top:730rpx;
+  z-index:7;
+  left:0rpx;
+  width:100%;
+  text-align: center;
+  font-size:32rpx;
+  color:#FF5028;
+  
+}
+
+#resultBtn{
+  position: absolute;
+  background: linear-gradient(to right, #F84F53,#FF7A2B);
+  top:790rpx;
+  width:344rpx;
+  height:80rpx;
+  z-index:7;
+  left:203rpx;
+  font-size: 42rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color:white;
+}
+#resultBtn2{
+  position: absolute;
+  background: linear-gradient(to right, #57A901,#6ED300);
+  top:910rpx;
+  width:344rpx;
+  height:80rpx;
+  z-index:7;
+  left:203rpx;
+  font-size: 42rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color:white;
+}
+#resultBg{
+
+  width:500rpx;
+  height:650rpx;
+  position: absolute;
+  top:400rpx;
+  z-index:7;
+  left:125rpx;
+  background: white;
+  border-radius:50rpx;
+}
+.ticketBg{
+  
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  z-index:6;
+}
+#ticketTitle{
+  width: 100%;
+  z-index:7;
+  color:white;
+  font-size: 50rpx;
+  text-align: center;
+  position: absolute;
+  top:350rpx;
+}
+#ticketImg{
+
+  width:600rpx;
+  height:245rpx;
+  position: absolute;
+  top:450rpx;
+  z-index:7;
+  left:75rpx;
+}
+#ticketTxt{
+ z-index:8;
+ color:#FB5106;
+ position: absolute;
+ top:520rpx;
+ width:100%;
+ font-size: 70rpx;
+ text-align: center;
+ font-weight: bolder;
+ padding-left: 40rpx;
+}
+#ticketBtn0{
+   z-index:7;
+   background: linear-gradient(to right,#F84F53 , #FF7A2B);
+   position: absolute;
+   top:760rpx;  
+   color:white;
+   width:500rpx;
+   height:80rpx;
+   left:125rpx;
+   line-height: 80rpx;
+   text-align: center;
+   font-size:44rpx;
+   border-radius: 80rpx;
+}
+#ticketBtn1{
+   z-index:7;
+   position: absolute;
+   top:920rpx;
+   width:60rpx;
+   height:60rpx;
+   left:345rpx;
+
+} 
+.header {
+    margin: 90rpx 0 90rpx 50rpx;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    width: 650rpx;
+    height: 300rpx;
+    line-height: 450rpx;
+   
+}
+ 
+.header image {
+    width: 200rpx;
+    height: 200rpx;
+}
+ 
+.content {
+    margin-left: 50rpx;
+    margin-bottom: 90rpx;
+}
+ 
+.content text {
+    display: block;
+    color: #9d9d9d;
+    margin-top: 40rpx;
+}
+
+.bottom {
+    height:60rpx;
+    border-radius: 60rpx;
+    margin: 70rpx 50rpx;
+    font-size: 35rpx;
+}
+#bg{
+
+  position: absolute;
+  z-index:1;
+  width:100%;
+  height:1000rpx;
+  top:0rpx;
+  /*
+  background: linear-gradient(to right, #FF9053,#FEA94E,#FF9053)
+  */
+}
+#container{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #FF9053,#FEA94E,#FF9053);
+}
+#ticket{
+
+  position: absolute;
+  z-index:2;
+  top:280rpx;
+  width:524rpx;
+  height:163rpx;
+}
+#ticketLine{
+  position: absolute;
+  display: flex;
+  z-index:3;
+  top:301rpx;
+  flex-direction: row;
+  padding-left: 20rpx;
+}
+.ticketTxt0{
+
+  color:#FB5106;
+  font-size: 46rpx;
+  height:120rpx;
+  line-height: 120rpx;
+  margin-left: 20rpx;
+  font-weight: bold;
+  
+}
+.ticketTxt1{
+
+  color:#FB5106;
+  font-size: 70rpx;
+  height:120rpx;
+  line-height: 120rpx;
+  margin-left: 10rpx;
+  font-weight: bold;
+}
+#ticketBtn{
+  
+  display: flex;
+  margin-top: 500rpx;
+  background: linear-gradient(to right, #F84F53,#FF7A2B);
+  height:100rpx;
+  width:360rpx;
+  color: white;
+  text-align: center;
+  line-height: 100rpx;
+  z-index: 6;
+  justify-content: center;
+  font-size: 42rpx;
+  border-radius: 50rpx;
+}
+#icons{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  z-index:3;
+  align-items: center;
+  height:243rpx;
+  margin-top: 80rpx;
+}
+.icon{
+  width:200rpx;
+}
+#lotteryView{
+  display: flex;
+  position: relative;
+  z-index:3;
+  margin-top: 80rpx;
+  height:367rpx;
+  margin-bottom: 80rpx;
+}
+#lotteryBg{
+  
+  height:367rpx;
+  width:750rpx;
+}
+#lotteryBtn{
+  
+  position: absolute;
+  top:24rpx;
+  width:320rpx;
+  height:320rpx;
+  border-radius: 360rpx;
+  background-color: rgba(255,71,0,0.1);
+  left:215rpx;
+}
+#lotteryBtn0{
+  
+  position: absolute;
+  top:54rpx;
+  width:260rpx;
+  height:260rpx;
+  border-radius: 360rpx;
+  background-color: rgba(255,71,0,1);
+  left:245rpx;
+  display: flex;
+  flex-direction: column;
+}
+#btnTxt0{
+
+  color:white;
+  font-size: 48rpx;
+  text-align: center;
+  margin-top: 80rpx;
+}
+#btnTxt1{
+  color:white;
+  font-size:28rpx;
+  text-align: center;
+   margin-top: 10rpx;
+}
+.shopGoodsImg{
+  width:100%;
+}

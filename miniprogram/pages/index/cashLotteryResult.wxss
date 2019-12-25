@@ -1,0 +1,86 @@
+page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #666666;
+  align-items: center;
+  width:100%;
+  height:100vh;
+}
+#bgView{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:700rpx;
+  height:837rpx;
+  position: relative;/*子元素的absolute才起效*/
+}
+#boxImg2{
+  position: absolute;
+  z-index:-1;
+  width:700rpx;
+  height:837rpx;
+}
+#adView{
+  position: absolute;
+  z-index:-1;
+  width:750rpx;
+  top:837rpx;
+}
+#txt0{
+  color:white;
+  font-size: 50rpx;
+  position: absolute;
+  z-index:1;
+  top:380rpx;
+  width:700rpx;
+  text-align: center;
+}
+#txt1{
+  color:white;
+  font-size: 80rpx;
+  position: absolute;
+  z-index:1;
+  top:450rpx;
+  width:700rpx;
+  text-align: center;
+}
+#txt2{
+  color:white;
+  font-size: 30rpx;
+  position: absolute;
+  z-index:1;
+  top:570rpx;
+  width:700rpx;
+  text-align: center;
+}
+#txt3{
+  color:white;
+  font-size: 30rpx;
+  position: absolute;
+  z-index:1;
+  top:610rpx;
+  width:700rpx;
+  text-align: center;
+}
+#btnImg2{
+
+  position: absolute;
+  top:700rpx;
+  z-index:1;
+  width:476rpx;
+  height:104rpx;
+}
+
+#txt4{
+  color:white;
+  font-size: 43rpx;
+  position: absolute;
+  z-index:3;
+  top:715rpx;
+  width:700rpx;
+  text-align: center;
+}
+

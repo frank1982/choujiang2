@@ -1,0 +1,15 @@
+<view id="bgView">
+  <image src="../../images/box2.png" id="boxImg2"></image>
+  <view id="txt0">抽中啦</view>
+  <view id="txt1">{{bonus}}</view>
+  <view id="txt2">已放入零钱包</view>
+  <view id="txt3">可在“我的-零钱包”中提现</view>
+  <image src="../../images/btn.png" id="btnImg2" bindtap="go"></image>
+  <view id="txt4" style='pointer-events: none'>知道了</view>
+  <view id="adView">
+    <ad unit-id="adunit-e0d3225d28fc710e" ad-type="video" ad-theme="white"></ad>
+    <!--
+    <ad unit-id="adunit-581bc8bc60f57f39"></ad>
+    -->
+  </view>
+</view>

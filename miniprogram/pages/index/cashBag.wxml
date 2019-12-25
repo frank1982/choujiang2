@@ -1,0 +1,15 @@
+<view id="topView">
+  <image src="../../images/bagBg.png" id="bagBg"></image>
+  <view id="balanceTitleTxt">可用余额(元)</view>
+  <view id="balanceTxt">{{freeBalance}}</view>
+  <view id="balanceTitleTxt2">满5元提现</view>
+</view>
+
+<view id="tixianTitle">提现中金额(元)</view>
+<view id="tixianTxt">{{totalInTixianAmount}}</view>
+<view class="tixianBtn" id="tixianBtn0" bindtap="clickWxtixian">提现</view>
+
+<ad unit-id="adunit-ac01a10e41ecec90" ad-type="video" ad-theme="white"></ad>
+<!--
+<view id="tixianHelp">请开通支付宝等收款功能</view>
+-->
